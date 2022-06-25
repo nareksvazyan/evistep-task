@@ -209,9 +209,10 @@ body {
             }
         }
         .nav {
-            .nav__list {
-                align-items: center;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
         }
     }
 }
