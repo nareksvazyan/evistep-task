@@ -72,34 +72,35 @@ body {
         justify-content: flex-end;
         .nav__list {
             display: flex;
-        }
-        .nav__item {
-            margin: 0 0 0 33px;
-            &:first-child {
-                margin-right: 0;
-            }
-        }
-        .nav__link {
-            color: $text-color1;
-            font-size: 18px;
-            line-height: 23px;
-            position: relative;
-            transition: all 0.3s ease;
-            &:hover {
-                color: $primary-color;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -2px;
-                left: 0;
-                width: 0;
-                height: 3px;
-                background: $primary-color;
-                transition: all 0.3s ease;
-            }
-            &:hover::after {
-                width: 100%;
+            .nav__item {
+                margin: 0 0 0 33px;
+                &:first-child {
+                    margin-right: 0;
+                }
+
+                .nav__link {
+                    color: $text-color1;
+                    font-size: 18px;
+                    line-height: 23px;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        background: $primary-color;
+                        transition: all 0.3s ease;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -172,9 +173,9 @@ body {
                     width: 100%;
                     background-color: $white-color;
                 }
-            }
-            &__item {
-                margin: 0px 0px 25px 0px;
+                .nav__item {
+                    margin: 0px 0px 0px 0px;
+                }
             }
         }
         .header__button {
@@ -207,12 +208,6 @@ body {
             .header__btn {
                 padding: 8.5px 27px;
             }
-        }
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
         }
     }
 }

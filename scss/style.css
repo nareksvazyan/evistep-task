@@ -105,15 +105,15 @@ body {
   display: flex;
 }
 
-.header .nav .nav__item {
+.header .nav .nav__list .nav__item {
   margin: 0 0 0 33px;
 }
 
-.header .nav .nav__item:first-child {
+.header .nav .nav__list .nav__item:first-child {
   margin-right: 0;
 }
 
-.header .nav .nav__link {
+.header .nav .nav__list .nav__item .nav__link {
   color: #37434E;
   font-size: 18px;
   line-height: 23px;
@@ -122,11 +122,11 @@ body {
   transition: all 0.3s ease;
 }
 
-.header .nav .nav__link:hover {
+.header .nav .nav__list .nav__item .nav__link:hover {
   color: #8276ff;
 }
 
-.header .nav .nav__link::after {
+.header .nav .nav__list .nav__item .nav__link::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -138,7 +138,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.header .nav .nav__link:hover::after {
+.header .nav .nav__list .nav__item .nav__link:hover::after {
   width: 100%;
 }
 
@@ -234,8 +234,8 @@ body {
     width: 100%;
     background-color: #fff;
   }
-  .header .nav__item {
-    margin: 0px 0px 25px 0px;
+  .header .nav .nav__list .nav__item {
+    margin: 0px 0px 0px 0px;
   }
   .header .header__button {
     z-index: 1000;
@@ -268,17 +268,6 @@ body {
   }
   .header .header__button .header__btn {
     padding: 8.5px 27px;
-  }
-  .header .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
