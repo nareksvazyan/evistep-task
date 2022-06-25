@@ -150,7 +150,7 @@ body {
             .nav__list {
                 position: fixed;
                 top: 0;
-                left: 0;
+                left: -100%;
                 width: 100%;
                 height: 100%;
                 background-color: $white-color;
@@ -328,7 +328,7 @@ body {
         }
     }
 }
-@media (max-width: 992.98pc) {
+@media (max-width: 992.98px) {
     .amount {
         .amount__container {
             margin-top: 45px;
