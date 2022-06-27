@@ -9,3 +9,12 @@ menuTogle.addEventListener('click',  () => {
     menuOpen.classList.toggle("active");
     menuClose.classList.toggle("active");
 })
+
+
+const accordion = document.getElementsByClassName('workspace__bottom-block');
+
+for (i = 0; i<accordion.length; i++) {
+    accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+    })
+}

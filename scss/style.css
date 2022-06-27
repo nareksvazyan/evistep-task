@@ -220,7 +220,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow: auto;
-    gap: 25px;
+    gap: 35px;
   }
   .header .nav .nav__list.active {
     left: 0;
@@ -236,6 +236,9 @@ body {
   }
   .header .nav .nav__list .nav__item {
     margin: 0px 0px 0px 0px;
+  }
+  .header .nav .nav__list .nav__item .nav__link {
+    font-size: 35px;
   }
   .header .header__button {
     z-index: 1000;
@@ -487,9 +490,9 @@ body {
 }
 
 .information .information__info .information-text:nth-last-child(1) {
-  font-size: 14.3px;
+  font-size: 14.1px;
   margin: 20px 0px -5px -15px;
-  max-width: 482px;
+  max-width: 485px;
   padding: 10px 14px;
 }
 
@@ -547,6 +550,165 @@ body {
 @media (max-width: 425.98px) {
   .information .information__info .information-title {
     font-size: 30px;
+  }
+  .information .information__info .information-text:nth-last-child(1) {
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+    max-width: none;
+    padding: 0;
+  }
+  .information .information__info .information-text-border {
+    border: none;
+  }
+}
+
+/*Workspace block style start*/
+.workspace .workspace__container {
+  margin-top: 135px;
+}
+
+.workspace .workspace__top .workspace-top-textarea {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FFBE5B;
+  text-transform: uppercase;
+}
+
+.workspace .workspace__top .workspace-top-title {
+  margin-top: 13px;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 49px;
+  letter-spacing: 0.005em;
+  color: #37434E;
+  text-align: center;
+}
+
+.workspace .workspace__bottom {
+  margin-top: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 146px;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 437px;
+          flex: 0 0 437px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block {
+  display: block;
+  padding: 10px 0px 10px 25px;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block:nth-last-child(1) {
+  height: 100%;
+  border-left: 3px solid #fd779f;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block:nth-last-child(2) {
+  height: 100%;
+  border-left: 3px solid #33dba8;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block:nth-last-child(3) {
+  height: 100%;
+  border-left: 3px solid #6385fd;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block:nth-last-child(4) {
+  height: 100%;
+  border-left: 3px solid #ffb546;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block:nth-last-child(5) {
+  height: 100%;
+  border-left: 3px solid #8276ff;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block .workspace__bottom-title {
+  color: #37434E;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.005em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block .workspace__bottom-text {
+  color: #4D5B67;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block .workspace__bottom-text span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.workspace .workspace__bottom .workspace__bottom-blocks .workspace__bottom-block.active .workspace__bottom-text {
+  height: 100%;
+  margin-top: 20px;
+}
+
+.workspace .workspace__bottom .workspace__bottom-img {
+  margin: 45px 0px 0px 0px;
+}
+
+.workspace .workspace__bottom .workspace__bottom-img img {
+  max-width: 100%;
+}
+
+@media (max-width: 1100.98px) {
+  .workspace .workspace__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
+  .workspace .workspace__bottom .workspace__bottom-blocks {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .workspace .workspace__bottom .workspace__bottom-img {
+    margin: 15px 0px 0px 0px;
+  }
+  .workspace .workspace__bottom .workspace__bottom-img img {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
